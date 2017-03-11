@@ -1,0 +1,127 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class UsersTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('users')->insert([
+            'name'=>'admin1',
+            'badge_number'=>'bit00',
+            'email'=>'admin1@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'1',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'dafton',
+            'badge_number'=>'bit001',
+            'email'=>'dafton@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'2',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'samuel',
+            'badge_number'=>'bit002',
+            'email'=>'samuel@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'2',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'kirigha',
+            'badge_number'=>'bit003',
+            'email'=>'kirigha@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'james',
+            'badge_number'=>'bit004',
+            'email'=>'james@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'2',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'renn',
+            'badge_number'=>'bit005',
+            'email'=>'renn@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'1',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'terry',
+            'badge_number'=>'bit006',
+            'email'=>'terry@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'2',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'kiyuka',
+            'badge_number'=>'bit007',
+            'email'=>'kiyuka@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'mwangi',
+            'badge_number'=>'bit008',
+            'email'=>'mwangi@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'cheseny',
+            'badge_number'=>'bit009',
+            'email'=>'cheseny@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'huddy',
+            'badge_number'=>'bit010',
+            'email'=>'huddy@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'chalo',
+            'badge_number'=>'bit011',
+            'email'=>'chalo@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'peninah',
+            'badge_number'=>'bit012',
+            'email'=>'peninah@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'joan',
+            'badge_number'=>'bit013',
+            'email'=>'joan@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'2',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'record Manager',
+            'badge_number'=>'bit015',
+            'email'=>'recordmanager@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'2',
+        ]);
+        DB::table('users')->insert([
+            'name'=>'normal user',
+            'badge_number'=>'bit016',
+            'email'=>'normaluser@gmail.com',
+            'password'=>bcrypt('mwangombe'),
+            'type'=>'0',
+        ]);
+    }
+}
